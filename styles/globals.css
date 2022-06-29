@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --background: #FDFDFD;
+  --text-primary: #111;
+  --text-secondary: #333;
+  --accent: purple;
+}
+
+[data-theme='dark'] {
+  --background: #181818;
+  --text-primary: white;
+  --text-secondary: rgb(202, 202, 202);
+  --text-footer: #0952e4;
+  --accent: darkred;
+}
+
+#__next{
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}

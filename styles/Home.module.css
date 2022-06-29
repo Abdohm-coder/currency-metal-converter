@@ -1,0 +1,137 @@
+.app {
+  height: 100%;
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.app__container {
+  max-width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  Design Dark-Theme btn */
+
+.switchTheme {
+  position: absolute;
+  top: 10px;
+  right: 10%;
+}
+
+.checkbox {
+  opacity: 0;
+	position: absolute;
+}
+
+.label {
+  background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checked {
+  transform: translateX(24px) !important;
+}
+/**/
+
+.app__container > h1 {
+  font-weight: 300;
+  font-size: 38px;
+  padding: 10px 0;
+  color: var(--text-primary);
+}
+
+.app__container > p {
+  color: var(--text-secondary);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.converter {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer {
+  margin: 40px 0; 
+}
+
+.footer h2 {
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.footer strong {
+  font-weight: 600;
+  color: var(--text-footer);
+}
+
+.footer p {
+  font-weight: 300;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  pointer-events: none;
+  text-shadow: 0.1px 0.3px 2px rgba(0, 0, 0, 0.471);
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer__social a {
+  /* padding: 8px 10px;
+  text-align: center; */
+  text-decoration: none;
+  margin: 5px 2px;
+  /* border-radius: 50%;
+  color: #fff; */
+}
+
+
+@media (max-width: 1125px) {
+  .app__container > h1 {
+    font-size: 30px;
+  }
+  .app__container > h2 {
+    font-size: 20px;
+  }
+  .app__container > p {
+    font-size: 18px;
+  }
+  .footer > h3 {
+    font-size: 16px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
